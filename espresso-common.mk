@@ -18,7 +18,7 @@
 # Include common omap4 makefile
 $(call inherit-product, hardware/ti/omap4/omap4.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/aosp-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso/overlay/aosp-common
 
 LOCAL_PATH := device/samsung/espresso-common
 
@@ -155,6 +155,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-flags=--no-watch-dog
 
-$(call inherit-product-if-exists, vendor/samsung/espresso-common/espresso-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/espresso/espresso-common-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
